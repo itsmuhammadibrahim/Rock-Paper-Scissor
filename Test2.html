@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Calculator</title>
+</head>
+<body>
+    <p>Amazon Shipping Calculator</p>
+    <p>Order Under $40 = + $10 Shipping</p>
+    <p>Order over $40 = Free Shipping</p>
+    
+   <input class="cost" type="number" placeholder="Cost of order">
+   <button onclick="total_cost();">Calculate</button>
+   <p class="total_cost"></p>
+    <script>
+        
+        function total_cost() {
+            let cost = document.querySelector('.cost').value;
+            cost = parseInt(cost);    
+            if (cost < 40) {
+                cost = cost + 10;
+            } else {
+                cost = cost;
+            }
+            document.querySelector('.total_cost').innerHTML = `Total Cost is: ${cost}`;
+        }
+    </script>
+</body>
+</html>

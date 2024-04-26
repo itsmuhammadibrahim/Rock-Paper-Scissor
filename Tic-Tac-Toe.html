@@ -7,21 +7,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <div class="text-center">
     <p class="font-mono text-1xl pl-2" >Rock Paper Scissors</p>
     <button class="rounded-l-lg px-8 bg-sky-500" onclick="human = 'Rock'; genRandom();Result();select();count();">Rock</button>
     <button class="rounded-none px-8 bg-sky-500" onclick="human = 'Paper'; genRandom();Result();select();count();">Paper</button>
     <button class="rounded-r-lg px-8 bg-sky-500" onclick="human = 'Scissor'; genRandom();Result();select();count();">Scissor</button>
-    
-    
+
+    <div>
     <p class="result p-2"></p>
 
     <p class="select p-2"></p>
 
     <p class="count p-2" ></p>
-
+</div>
     <button class="rounded-full px-8 bg-sky-500" onclick="countzero();">Reset</button>
+</div>
 <script>
-    let Computer = '';
+
+let Computer = '';
     let human = '';
     let wins = 0;
     let lose = 0;

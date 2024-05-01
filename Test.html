@@ -9,11 +9,14 @@
 <body>
     <div class="p-2">
     <P>Youtube Subscribe Button</P>
-    <button class="bg-black text-white font-bold rounded-full p-1 px-4 mt-2">Subscribe</button>
+    <button class="bg-black text-white font-bold rounded-full p-1 px-4 mt-2 focus:bg-sky-500"onclick="subscribe()">Subscribe</button>
  </div>
     <script>
-        // document.querySelector('button').innerHTML = 'Change';
-        console.log(document.querySelector('button'));
+        function subscribe() {
+            document.querySelector('button').innerHTML = 'Subscribed';    
+        }
+        
+        
     </script>
 
 </body>
